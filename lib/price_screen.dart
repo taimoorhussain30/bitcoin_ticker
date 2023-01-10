@@ -105,7 +105,7 @@ class _PriceScreenState extends State<PriceScreen> {
             height: 150.0,
             padding: const EdgeInsets.only(bottom: 30.0),
             color: Colors.lightBlue,
-            child: androidPicker(),
+            child: Platform.isIOS ? iOSPicker() : androidPicker(),
           ),
         ],
       ),
